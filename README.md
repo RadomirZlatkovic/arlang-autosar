@@ -1,0 +1,17 @@
+# Developer guide
+
+## Build
+  - Install Node.js
+  - Position terminal inside this directory
+  - Execute following commands:
+    - npm install // this will install dependencies into node_modules
+    - npm run langium:generate // this will generate files from arlang.langium file
+    - npm run build
+
+## Try
+  - Press F5 // it will open new VSCode instance with included extension
+  - You can create file with .arlang extension and start writing code
+
+## Optional
+  - if you want to try language in the web:
+    - npm run bundle:serve // this will show ip address with port, open it in the browser
