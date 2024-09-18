@@ -1,0 +1,15 @@
+{
+    "projectName": "Arlang",
+    "languages": [{
+        "id": "arlang",
+        "grammar": "src/language/arlang.langium",
+        "fileExtensions": [".arlang"],
+        "textMate": {
+            "out": "syntaxes/arlang.tmLanguage.json"
+        },
+        "monarch": {
+            "out": "src/syntaxes/arlang.monarch.ts"
+        }
+    }],
+    "out": "src/language/generated"
+}
