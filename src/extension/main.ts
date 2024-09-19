@@ -1,13 +1,62 @@
 import type { LanguageClientOptions, ServerOptions} from 'vscode-languageclient/node.js';
-import type * as vscode from 'vscode';
+import * as vscode from 'vscode';
 import * as path from 'node:path';
 import { LanguageClient, TransportKind } from 'vscode-languageclient/node.js';
+import { TargetProject } from './target-view.js';
+import { ArlangProject } from './arlang-view.js';
+import { WorkspaceFolders } from './workspace-view.js';
+import { storageKeys } from './enums.js';
 
 let client: LanguageClient;
 
 // This function is called when the extension is activated.
 export function activate(context: vscode.ExtensionContext): void {
     client = startLanguageClient(context);
+
+    // configure views, commands, events
+    WorkspaceFolders.INSTANCE(context);
+    const targetProjectInstance = TargetProject.INSTANCE(context);
+    const arlangProjectInstance = ArlangProject.INSTANCE(context);
+
+    // if folder in current workspace was selected in previous workspace, mark it as selected
+    restorePreviousTargetProjectFolder(context, targetProjectInstance);
+    restorePreviousArlangProjectFolder(context, arlangProjectInstance);
+}
+
+async function restorePreviousTargetProjectFolder(context: vscode.ExtensionContext, targetProjectInstance : TargetProject) {
+    const targetProjectFolder = await context.globalState.get(storageKeys.targetProjectFolder);
+    if (targetProjectFolder !== undefined) {
+
+        const workspaceFolders = vscode.workspace.workspaceFolders;
+        if (workspaceFolders !== undefined) {
+
+            const matchingFolder = workspaceFolders.find((workspaceFolder) => {
+                return (targetProjectFolder as string) === workspaceFolder.uri.fsPath.toString();
+            });
+            if (matchingFolder !== undefined) {
+                targetProjectInstance.restoreProjectFolder(matchingFolder);
+            }
+
+        }
+    }
+}
+
+async function restorePreviousArlangProjectFolder(context: vscode.ExtensionContext, arlangProjectInstance : ArlangProject) {
+    const arlangProjectFolder = await context.globalState.get(storageKeys.arlangProjectFolder);
+    if (arlangProjectFolder !== undefined) {
+
+        const workspaceFolders = vscode.workspace.workspaceFolders;
+        if (workspaceFolders !== undefined) {
+
+            const matchingFolder = workspaceFolders.find((workspaceFolder) => {
+                return (arlangProjectFolder as string) === workspaceFolder.uri.fsPath.toString();
+            });
+            if (matchingFolder !== undefined) {
+                arlangProjectInstance.restoreProjectFolder(matchingFolder);
+            }
+
+        }
+    }
 }
 
 // This function is called when the extension is deactivated.

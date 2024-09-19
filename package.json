@@ -23,29 +23,31 @@
         "test": "vitest run"
     },
     "dependencies": {
-        "langium": "~3.2.0",
-        "vscode-languageclient": "~9.0.1",
-        "vscode-languageserver": "~9.0.1",
         "@codingame/monaco-vscode-editor-service-override": "~3.2.3",
         "@codingame/monaco-vscode-keybindings-service-override": "~3.2.3",
+        "@xmldom/xmldom": "^0.8.10",
+        "langium": "~3.2.0",
         "monaco-editor": "npm:@codingame/monaco-vscode-editor-api@~3.2.3",
         "monaco-editor-wrapper": "~4.0.2",
         "monaco-languageclient": "~8.1.1",
-        "vscode": "npm:@codingame/monaco-vscode-api@~3.2.3"
+        "vscode": "npm:@codingame/monaco-vscode-api@~3.2.3",
+        "vscode-languageclient": "~9.0.1",
+        "vscode-languageserver": "~9.0.1",
+        "xml-formatter": "^2.6.1"
     },
     "devDependencies": {
+        "@codingame/esbuild-import-meta-url-plugin": "~1.0.2",
         "@types/node": "^18.0.0",
-        "@typescript-eslint/parser": "~7.3.1",
-        "@typescript-eslint/eslint-plugin": "~7.3.1",
-        "eslint": "~8.57.0",
-        "langium-cli": "~3.2.0",
-        "typescript": "~5.1.6",
         "@types/vscode": "~1.67.0",
+        "@typescript-eslint/eslint-plugin": "~7.3.1",
+        "@typescript-eslint/parser": "~7.3.1",
         "concurrently": "~8.2.1",
         "esbuild": "~0.20.2",
-        "@codingame/esbuild-import-meta-url-plugin": "~1.0.2",
-        "vite": "~5.2.7",
+        "eslint": "~8.57.0",
         "http-server": "~14.1.1",
+        "langium-cli": "~3.2.0",
+        "typescript": "~5.1.6",
+        "vite": "~5.2.7",
         "vitest": "~1.4.0"
     },
     "volta": {
@@ -67,7 +69,9 @@
                     "arlang",
                     "arlang"
                 ],
-                "extensions": [".arlang"],
+                "extensions": [
+                    ".arlang"
+                ],
                 "configuration": "./language-configuration.json"
             }
         ],
@@ -76,6 +80,178 @@
                 "language": "arlang",
                 "scopeName": "source.arlang",
                 "path": "syntaxes/arlang.tmLanguage.json"
+            }
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "arlang-view-container",
+                    "title": "Arlang",
+                    "icon": "resources/arlang.svg"
+                }
+            ]
+        },
+        "views": {
+            "arlang-view-container": [
+                {
+                    "id": "workspace_folders-view",
+                    "name": "Workspace folders"
+                },
+                {
+                    "id": "target_project-view",
+                    "name": "Target project"
+                },
+                {
+                    "id": "arlang_project-view",
+                    "name": "Arlang project"
+                }
+            ]
+        },
+        "viewsWelcome": [
+            {
+                "view": "workspace_folders-view",
+                "contents": "This view should display workspace folders so you can choose TARGET and ARLANG folders.\nYou can navigate folders/files from the [Explorer view container](command:workbench.view.explorer).\n[Open Folder](command:workbench.action.addRootFolder)"
+            },
+            {
+                "view": "target_project-view",
+                "contents": "Target project is the folder where ARXML files will be modified and added.\nRight-click the folder from WORKSPACE FOLDERS and click 'Select as Target project folder' to continue."
+            },
+            {
+                "view": "arlang_project-view",
+                "contents": "Arlang project is the folder that will be used for storing ARLANG files. After ARLANG files are modified or new files are added, you can transform them into ARXML files.\nRight-click the folder from WORKSPACE FOLDERS and click 'Select as Arlang project folder' to continue."
+            }
+        ],
+        "menus": {
+            "view/title": [
+                {
+                    "command": "arlang.workspace.addRootFolder",
+                    "when": "view == workspace_folders-view",
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "arlang.workspace.refresh",
+                    "when": "view == workspace_folders-view",
+                    "group": "navigation@2"
+                },
+                {
+                    "command": "arlang.target.arxmlToArlangTransformation",
+                    "when": "view == target_project-view",
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "arlang.target.refresh",
+                    "when": "view == target_project-view",
+                    "group": "navigation@2"
+                },
+                {
+                    "command": "arlang.arlang.arlangToArxmlTransformation",
+                    "when": "view == arlang_project-view",
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "arlang.arlang.refresh",
+                    "when": "view == arlang_project-view",
+                    "group": "navigation@2"
+                }
+            ],
+            "view/item/context": [
+                {
+                    "command": "arlang.unselectTargetFolder",
+                    "when": "view == workspace_folders-view && viewItem == targetFolder",
+                    "group": "arlang.workspace1"
+                },
+                {
+                    "command": "arlang.unselectTargetFolder",
+                    "when": "view == target_project-view && viewItem == targetFolder",
+                    "group": "arlang.target-workspace"
+                },
+                {
+                    "command": "arlang.unselectArlangFolder",
+                    "when": "view == workspace_folders-view && viewItem == arlangFolder",
+                    "group": "arlang.workspace1"
+                },
+                {
+                    "command": "arlang.unselectArlangFolder",
+                    "when": "view == arlang_project-view && viewItem == arlangFolder",
+                    "group": "arlang.arlang-workspace"
+                },
+                {
+                    "command": "arlang.workspace.selectTargetFolder",
+                    "when": "view == workspace_folders-view && (viewItem != targetFolder && viewItem != arlangFolder)",
+                    "group": "arlang.workspace2@1"
+                },
+                {
+                    "command": "arlang.workspace.selectArlangFolder",
+                    "when": "view == workspace_folders-view && (viewItem != targetFolder && viewItem != arlangFolder)",
+                    "group": "arlang.workspace2@2"
+                },
+                {
+                    "command": "arlang.workspace.removeEntry",
+                    "when": "view == workspace_folders-view",
+                    "group": "arlang.workspace3"
+                },
+                {
+                    "command": "arlang.target.arxmlToArlangTransformation",
+                    "when": "view == target_project-view && viewItem == targetFolder",
+                    "group": "arlang.target-transformation"
+                },
+                {
+                    "command": "arlang.arlang.arlangToArxmlTransformation",
+                    "when": "view == arlang_project-view && viewItem == arlangFolder",
+                    "group": "arlang.arlang-transformation"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "arlang.workspace.addRootFolder",
+                "title": "Add folder to workspace",
+                "icon": "$(new-folder)"
+            },
+            {
+                "command": "arlang.workspace.refresh",
+                "title": "Refresh",
+                "icon": "$(refresh)"
+            },
+            {
+                "command": "arlang.target.arxmlToArlangTransformation",
+                "title": "Transform ARXML files to ARLANG files",
+                "icon": "$(arrow-both)"
+            },
+            {
+                "command": "arlang.target.refresh",
+                "title": "Refresh",
+                "icon": "$(refresh)"
+            },
+            {
+                "command": "arlang.arlang.arlangToArxmlTransformation",
+                "title": "Transform ARLANG files to ARXML files",
+                "icon": "$(arrow-both)"
+            },
+            {
+                "command": "arlang.arlang.refresh",
+                "title": "Refresh",
+                "icon": "$(refresh)"
+            },
+            {
+                "command": "arlang.unselectTargetFolder",
+                "title": "Unselect Target folder"
+            },
+            {
+                "command": "arlang.unselectArlangFolder",
+                "title": "Unselect Arlang folder"
+            },
+            {
+                "command": "arlang.workspace.selectTargetFolder",
+                "title": "Select as Target project folder"
+            },
+            {
+                "command": "arlang.workspace.selectArlangFolder",
+                "title": "Select as Arlang project folder"
+            },
+            {
+                "command": "arlang.workspace.removeEntry",
+                "title": "Remove folder from workspace"
             }
         ]
     },
