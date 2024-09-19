@@ -7,7 +7,7 @@
     - npm install // this will install dependencies into node_modules
     - npm run langium:generate // this will generate files from arlang.langium file
     - npm run build
-    - npm run bundle // this will reduce the size of the extension and make it faster
+    - npm run bundle // (optional) this will reduce the size of the extension and make it faster
 
 ## Try
   - Press F5 // it will open new VSCode instance with included extension
