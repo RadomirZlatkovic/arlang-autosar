@@ -1,0 +1,20 @@
+#package last.d
+interface:senderReceiver SR_I_1_Cp {
+    arlangModId : "arlangModId@3"
+}
+interface:senderReceiver SR_1{
+    arlangModId : "arlangModId@2"
+}
+interface:senderReceiver SR_I_1Changed {
+    arlangModId : "arlangModId@3"
+}
+interface:senderReceiver SR_I_2 {
+    arlangModId : "arlangModId@4"
+}
+#end
+
+#package last
+    interface:senderReceiver SR_I_2 {
+        arlangModId : "arlangModId@4"
+    }
+#end

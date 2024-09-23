@@ -1,0 +1,5 @@
+#package p
+    interface:senderReceiver InterfaceShortName {
+        arlangModId : "arlangModId@1"
+    }
+#end

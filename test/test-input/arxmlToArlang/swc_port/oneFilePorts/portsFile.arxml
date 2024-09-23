@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>ExamplePackage</SHORT-NAME>
+            <ELEMENTS>
+				<APPLICATION-SW-COMPONENT-TYPE>
+                    <SHORT-NAME>Swc1</SHORT-NAME>
+                    <PORTS>
+                        <P-PORT-PROTOTYPE>
+                            <SHORT-NAME>p</SHORT-NAME>
+                            <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ExamplePackage/csi0</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                    </PORTS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+                <CLIENT-SERVER-INTERFACE>
+                    <SHORT-NAME>csi0</SHORT-NAME>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE>
+                    <SHORT-NAME>csi1</SHORT-NAME>
+                </CLIENT-SERVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE>
+                    <SHORT-NAME>sri0</SHORT-NAME>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE>
+                    <SHORT-NAME>sri1</SHORT-NAME>
+                </SENDER-RECEIVER-INTERFACE>
+				<APPLICATION-SW-COMPONENT-TYPE>
+                    <SHORT-NAME>Swc2</SHORT-NAME>
+                    <PORTS>
+                        <P-PORT-PROTOTYPE>
+                            <SHORT-NAME>P</SHORT-NAME>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ExamplePackage/sri0</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                    </PORTS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+			<SHORT-NAME>p1</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>e1</SHORT-NAME>
+				</AR-PACKAGE>
+				<AR-PACKAGE>
+					<SHORT-NAME>e2</SHORT-NAME>
+					<ELEMENTS>
+					</ELEMENTS>
+				</AR-PACKAGE>
+				<AR-PACKAGE>
+					<SHORT-NAME>p2</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>p3</SHORT-NAME>
+							<ELEMENTS>
+								<APPLICATION-SW-COMPONENT-TYPE>
+									<SHORT-NAME>Swc3</SHORT-NAME>
+									<PORTS>
+										<P-PORT-PROTOTYPE>
+											<SHORT-NAME>p1</SHORT-NAME>
+											<PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ExamplePackage/csi0</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE>
+											<SHORT-NAME>p2</SHORT-NAME>
+											<REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ExamplePackage/csi1</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE>
+											<SHORT-NAME>p3</SHORT-NAME>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ExamplePackage/sri0</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE>
+											<SHORT-NAME>p4</SHORT-NAME>
+											<REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ExamplePackage/sri1</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+									</PORTS>
+								</APPLICATION-SW-COMPONENT-TYPE>
+							</ELEMENTS>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,47 @@
+#package c1
+
+	interface:clientServer ExampleInterface1 {
+		arlangModId : "arlangModId@15"
+	}
+
+	interface:clientServer ExampleInterface2 {
+		arlangModId : "arlangModId@16"
+	}
+
+	interface:senderReceiver ExampleInterface3 {
+		arlangModId : "arlangModId@11"
+	}
+
+#end
+
+#package c1.CN
+
+	interface:clientServer i {
+		arlangModId : "arlangModId@17"
+	}
+
+#end
+
+#package c2
+
+	interface:senderReceiver ExampleInterface1 {
+		arlangModId : "arlangModId@12"
+	}
+
+	interface:senderReceiver ExampleInterface2 {
+		arlangModId : "arlangModId@13"
+	}
+
+	interface:clientServer ExampleInterface3 {
+		arlangModId : "arlangModId@18"
+	}
+
+#end
+
+#package c2.CN
+
+	interface:senderReceiver i {
+		arlangModId : "arlangModId@14"
+	}
+
+#end

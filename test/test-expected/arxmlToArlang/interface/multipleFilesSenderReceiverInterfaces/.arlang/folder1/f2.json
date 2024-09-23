@@ -1,0 +1,26 @@
+[
+  {
+    "arlangModId": "arlangModId@2",
+    "containerFQN": "sh1",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@3",
+    "containerFQN": "sh1",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@4",
+    "containerFQN": "sh2",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@5",
+    "containerFQN": "sh2",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 3
+  }
+]

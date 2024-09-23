@@ -1,0 +1,74 @@
+#package ExamplePackage
+
+	swComponent:application Swc1 {
+
+		port:provided p implements ExamplePackage.csi0 {
+			arlangModId : "arlangModId@7"
+		}
+
+		arlangModId : "arlangModId@4"
+	}
+
+	interface:clientServer csi0 {
+		arlangModId : "arlangModId@2"
+	}
+
+	interface:clientServer csi1 {
+		arlangModId : "arlangModId@3"
+	}
+
+	interface:senderReceiver sri0 {
+		arlangModId : "arlangModId@0"
+	}
+
+	interface:senderReceiver sri1 {
+		arlangModId : "arlangModId@1"
+	}
+
+	swComponent:application Swc2 {
+
+		port:provided P implements ExamplePackage.sri0 {
+			arlangModId : "arlangModId@8"
+		}
+
+		arlangModId : "arlangModId@5"
+	}
+
+#end
+
+#package p1
+#end
+
+#package p1.e1
+#end
+
+#package p1.e2
+#end
+
+#package p1.p2
+#end
+
+#package p1.p2.p3
+
+	swComponent:application Swc3 {
+
+		port:provided p1 implements ExamplePackage.csi0 {
+			arlangModId : "arlangModId@9"
+		}
+
+		port:required p2 implements ExamplePackage.csi1 {
+			arlangModId : "arlangModId@11"
+		}
+
+		port:provided p3 implements ExamplePackage.sri0 {
+			arlangModId : "arlangModId@10"
+		}
+
+		port:required p4 implements ExamplePackage.sri1 {
+			arlangModId : "arlangModId@12"
+		}
+
+		arlangModId : "arlangModId@6"
+	}
+
+#end

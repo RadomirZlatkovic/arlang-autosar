@@ -1,0 +1,20 @@
+[
+	{
+		"arlangModId": "arlangModId@5",
+		"containerFQN": "CSIP",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@6",
+		"containerFQN": "CSIP",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 1
+	},
+	{
+		"arlangModId": "arlangModId@7",
+		"containerFQN": "CSIP.f",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 2
+	}
+]

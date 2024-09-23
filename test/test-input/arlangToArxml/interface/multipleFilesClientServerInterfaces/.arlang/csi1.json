@@ -1,0 +1,14 @@
+[
+    {
+		"arlangModId": "arlangModId@0",
+		"containerFQN": "collection",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 0
+    },
+    {
+		"arlangModId": "arlangModId@1",
+		"containerFQN": "collection",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 1
+    }
+]

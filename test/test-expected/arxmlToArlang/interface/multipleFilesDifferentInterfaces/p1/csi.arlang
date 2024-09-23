@@ -1,0 +1,19 @@
+#package ClientServerInterfacesPackage
+
+	interface:clientServer Csi1 {
+		arlangModId : "arlangModId@5"
+	}
+
+	interface:clientServer Csi2 {
+		arlangModId : "arlangModId@6"
+	}
+
+#end
+
+#package ClientServerInterfacesPackage.f
+
+	interface:clientServer Csi3 {
+		arlangModId : "arlangModId@7"
+	}
+
+#end

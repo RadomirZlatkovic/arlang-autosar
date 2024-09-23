@@ -1,0 +1,13 @@
+#package p1
+#end
+
+#package p1.p2
+#end
+
+#package p1.p2.p3
+
+	interface:senderReceiver sri {
+		arlangModId : "arlangModId@1"
+	}
+
+#end

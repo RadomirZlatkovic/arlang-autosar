@@ -1,0 +1,6 @@
+#package e
+
+interface:senderReceiver sri1{}
+interface:senderReceiver sri2{}
+
+#end

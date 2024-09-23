@@ -1,0 +1,19 @@
+#package SenderReceiverInterfacesPackage
+
+	interface:senderReceiver Sri1 {
+		arlangModId : "arlangModId@8"
+	}
+
+	interface:senderReceiver Sri2 {
+		arlangModId : "arlangModId@9"
+	}
+
+#end
+
+#package SenderReceiverInterfacesPackage.f
+
+	interface:senderReceiver Sri3 {
+		arlangModId : "arlangModId@10"
+	}
+
+#end

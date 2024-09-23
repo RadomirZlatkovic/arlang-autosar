@@ -1,0 +1,20 @@
+[
+  {
+    "arlangModId": "arlangModId@8",
+    "containerFQN": "SenderReceiverInterfacesPackage",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@9",
+    "containerFQN": "SenderReceiverInterfacesPackage",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@10",
+    "containerFQN": "SenderReceiverInterfacesPackage.f",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 2
+  }
+]

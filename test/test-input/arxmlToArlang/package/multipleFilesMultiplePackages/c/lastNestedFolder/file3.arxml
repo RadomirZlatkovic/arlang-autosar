@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>n1</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>n2</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>n3</SHORT-NAME>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+				<AR-PACKAGE>
+					<SHORT-NAME>nested2</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>nested22</SHORT-NAME>
+						</AR-PACKAGE>
+						<AR-PACKAGE>
+							<SHORT-NAME>nested3</SHORT-NAME>
+							<AR-PACKAGES>
+								<AR-PACKAGE>
+									<SHORT-NAME>nested33</SHORT-NAME>
+								</AR-PACKAGE>
+							</AR-PACKAGES>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

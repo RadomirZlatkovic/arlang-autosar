@@ -1,0 +1,26 @@
+[
+  {
+    "arlangModId": "arlangModId@0",
+    "containerFQN": "swcSN0",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@1",
+    "containerFQN": "swcSN0.swcSN1.swcSN2",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@2",
+    "containerFQN": "swcSN0.swcSN1.swcSN2",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@3",
+    "containerFQN": "j1",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 3
+  }
+]

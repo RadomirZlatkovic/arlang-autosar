@@ -1,0 +1,20 @@
+#package n1
+#end
+
+#package n1.n2
+#end
+
+#package n1.n2.n3
+#end
+
+#package n1.nested2
+#end
+
+#package n1.nested2.nested22
+#end
+
+#package n1.nested2.nested3
+#end
+
+#package n1.nested2.nested3.nested33
+#end

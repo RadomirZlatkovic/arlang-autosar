@@ -1,0 +1,28 @@
+#package csiHolder0
+#end
+
+#package csiHolder0.csiHolder1
+#end
+
+#package csiHolder0.csiHolder1.csiHolder2
+
+	interface:clientServer csi0 {
+		arlangModId : "arlangModId@0"
+	}
+
+	interface:clientServer csi1 {
+		arlangModId : "arlangModId@1"
+	}
+
+#end
+
+#package NoInterfacePackage
+#end
+
+#package p1
+
+	interface:clientServer csi {
+		arlangModId : "arlangModId@2"
+	}
+
+#end

@@ -1,0 +1,35 @@
+#package e
+
+interface:clientServer ReliableConnection {
+    arlangModId : "arlangModId@1"
+}
+interface:senderReceiver UnreliableConnection {
+    arlangModId : "arlangModId@0"
+}
+interface:senderReceiver modifiedTagDiagConnection {
+    arlangModId : "arlangModId@2"
+}
+
+interface:clientServer ReliableConnectionCp1 {
+    arlangModId : "arlangModId@1"
+}
+
+interface:senderReceiver UnreliableConnectionCp {
+    arlangModId : "arlangModId@0"
+}
+
+interface:clientServer ReliableConnectionCp2 {
+    arlangModId : "arlangModId@1"
+}
+
+#end
+
+#package m
+
+    interface:senderReceiver n1 {}
+    interface:senderReceiver n2 {}
+    interface:senderReceiver n3 {}
+    interface:senderReceiver n4 {}
+    interface:senderReceiver n5 {}
+
+#end

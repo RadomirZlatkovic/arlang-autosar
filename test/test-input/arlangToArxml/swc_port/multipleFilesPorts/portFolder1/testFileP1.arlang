@@ -1,0 +1,60 @@
+#package e.s1
+
+    interface:clientServer i1 {
+        arlangModId : "arlangModId@1"
+    }
+
+    interface:senderReceiver i2 {
+        arlangModId : "arlangModId@0"
+    }
+
+    swComponent:application MyS {
+        port:provided MySP1 implements e.s1.i1 {
+            arlangModId : "arlangModId@4"
+        }
+        port:required MySP2 implements i2 {
+            arlangModId : "arlangModId@7"
+        }
+        port:provided np1 implements org.com.c.l5.CSI {
+            arlangModId : "arlangModId@5"
+        }
+        port:provided np2 implements org.com.c.l5.SR {
+            arlangModId : "arlangModId@6"
+        }
+        port:required fp implements fp.FrameFeeder {
+            arlangModId : "arlangModId@8"
+        }
+
+        arlangModId : "arlangModId@2"
+    }
+
+#end
+
+#package m1
+
+    swComponent:application SwcM1 {
+
+        port:required exampleCp implements e.s1.i2 {
+            arlangModId : "arlangModId@12"
+        }
+
+        port:provided new1 implements i1 {}
+        port:required new2 implements i2 {}
+
+        arlangModId : "arlangModId@3"
+    }
+
+#end
+
+#package newPackage.p1.p2.p3
+
+    swComponent:application NewComponent {
+        port:provided np1 implements org.com.c.l5.CSI {
+            arlangModId : "arlangModId@5"
+        }
+        port:provided np2 implements org.com.c.l5.SR {
+            arlangModId : "arlangModId@6"
+        }
+    }
+
+#end

@@ -1,0 +1,10 @@
+#package p
+    interface:clientServer Tunnel {
+    }
+#end
+
+#package t.package.example
+    interface:clientServer Tunnel2Diff {
+        arlangModId : "arlangModId@0"
+    }
+#end

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>c</SHORT-NAME>
+			<ELEMENTS>
+				<CLIENT-SERVER-INTERFACE>
+					<SHORT-NAME>MyInterface</SHORT-NAME>
+				</CLIENT-SERVER-INTERFACE>
+				<SENDER-RECEIVER-INTERFACE attr1Sri="example1" attr2Sri="example2" attr3Sri="example3">
+					<SHORT-NAME>AnotherI</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+			</ELEMENTS>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>d</SHORT-NAME>
+					<ELEMENTS>
+						<SENDER-RECEIVER-INTERFACE>
+							<SHORT-NAME>IExample1</SHORT-NAME>
+							<EXAMPLE-TAG>Val</EXAMPLE-TAG>
+						</SENDER-RECEIVER-INTERFACE>
+						<CLIENT-SERVER-INTERFACE>
+							<SHORT-NAME>IExample2</SHORT-NAME>
+						</CLIENT-SERVER-INTERFACE>
+					</ELEMENTS>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

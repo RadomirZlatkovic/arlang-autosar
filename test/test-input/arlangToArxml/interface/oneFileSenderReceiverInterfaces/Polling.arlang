@@ -1,0 +1,16 @@
+#package p1.p2.p3.p4
+interface:senderReceiver time{}
+#end
+
+#package p1
+interface:senderReceiver temperature_new {
+    arlangModId : "arlangModId@0"
+}
+#end
+
+#package p2
+interface:senderReceiver speed_new
+{
+    arlangModId : "arlangModId@1"
+}
+#end

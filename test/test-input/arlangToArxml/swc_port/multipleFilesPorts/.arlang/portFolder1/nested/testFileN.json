@@ -1,0 +1,62 @@
+[
+	{
+		"arlangModId": "arlangModId@13",
+		"containerFQN": "org.com.c.l5",
+		"tagName": "SENDER-RECEIVER-INTERFACE",
+		"index": 0
+	},
+    {
+		"arlangModId": "arlangModId@14",
+		"containerFQN": "org.com.c.l5",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 0
+	},
+    {
+		"arlangModId": "arlangModId@15",
+		"containerFQN": "COLLECTION",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 1
+	},
+	{
+		"arlangModId": "arlangModId@16",
+		"containerFQN": "org.com.c.l5",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@17",
+		"containerFQN": "org.com.c.l5.UserDataProvider",
+		"tagName": "P-PORT-PROTOTYPE",
+		"index": 0
+	},
+    {
+		"arlangModId": "arlangModId@18",
+		"containerFQN": "org.com.c.l5.UserDataProvider",
+		"tagName": "P-PORT-PROTOTYPE",
+		"index": 1
+	},
+	{
+		"arlangModId": "arlangModId@19",
+		"containerFQN": "org.com.c.l5.UserDataProvider",
+		"tagName": "R-PORT-PROTOTYPE",
+		"index": 0
+	},
+    {
+		"arlangModId": "arlangModId@20",
+		"containerFQN": "org.com.c.l5.UserDataProvider",
+		"tagName": "R-PORT-PROTOTYPE",
+		"index": 1
+	},
+    {
+		"arlangModId": "arlangModId@21",
+		"containerFQN": "org.com.c.l5.UserDataProvider",
+		"tagName": "R-PORT-PROTOTYPE",
+		"index": 2
+	},
+    {
+		"arlangModId": "arlangModId@22",
+		"containerFQN": "org.com.c.l5.UserDataProvider",
+		"tagName": "R-PORT-PROTOTYPE",
+		"index": 3
+	}
+]

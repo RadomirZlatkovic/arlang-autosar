@@ -1,0 +1,23 @@
+#package sh1
+
+	interface:clientServer csi0 {
+		arlangModId : "arlangModId@2"
+	}
+
+	interface:clientServer csi1 {
+		arlangModId : "arlangModId@3"
+	}
+
+#end
+
+#package sh2
+
+	interface:clientServer csi2 {
+		arlangModId : "arlangModId@4"
+	}
+
+	interface:clientServer csi3 {
+		arlangModId : "arlangModId@5"
+	}
+
+#end

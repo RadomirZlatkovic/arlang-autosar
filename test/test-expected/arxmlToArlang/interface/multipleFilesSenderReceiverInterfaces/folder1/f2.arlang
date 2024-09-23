@@ -1,0 +1,23 @@
+#package sh1
+
+	interface:senderReceiver sri0 {
+		arlangModId : "arlangModId@2"
+	}
+
+	interface:senderReceiver sri1 {
+		arlangModId : "arlangModId@3"
+	}
+
+#end
+
+#package sh2
+
+	interface:senderReceiver sri2 {
+		arlangModId : "arlangModId@4"
+	}
+
+	interface:senderReceiver sri3 {
+		arlangModId : "arlangModId@5"
+	}
+
+#end

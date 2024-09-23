@@ -1,0 +1,26 @@
+#package s2
+    swComponent:application LastComponent {
+        arlangModId : "arlangModId@3"
+    }
+
+    swComponent:application LastComponentCp1 {
+        arlangModId : "arlangModId@3"
+    }
+
+    swComponent:application LastComponentCp2 {
+        arlangModId : "arlangModId@3"
+    }
+
+#end
+
+#package s2.s22
+
+    swComponent:application LastComponentCp3 {
+        arlangModId : "arlangModId@3"
+    }
+
+    swComponent:application LastComponentCp4 {
+        arlangModId : "arlangModId@3"
+    }
+
+#end

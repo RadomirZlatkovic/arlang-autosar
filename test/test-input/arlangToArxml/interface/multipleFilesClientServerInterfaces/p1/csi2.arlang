@@ -1,0 +1,5 @@
+#package a1
+interface:clientServer csi2 {
+    arlangModId : "arlangModId@2"
+}
+#end

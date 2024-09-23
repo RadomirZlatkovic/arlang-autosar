@@ -1,0 +1,176 @@
+[
+  {
+    "arlangModId": "arlangModId@0",
+    "containerFQN": "p1",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@1",
+    "containerFQN": "p1.p2",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@2",
+    "containerFQN": "p1.p2.p3",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@3",
+    "containerFQN": "Example",
+    "tagName": "CLIENT-SERVER-INTERFACE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@4",
+    "containerFQN": "p1",
+    "tagName": "CLIENT-SERVER-INTERFACE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@5",
+    "containerFQN": "p1",
+    "tagName": "CLIENT-SERVER-INTERFACE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@6",
+    "containerFQN": "p1.p2.p3",
+    "tagName": "CLIENT-SERVER-INTERFACE",
+    "index": 3
+  },
+  {
+    "arlangModId": "arlangModId@7",
+    "containerFQN": "Example",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@8",
+    "containerFQN": "p1",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@9",
+    "containerFQN": "p1",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@10",
+    "containerFQN": "p1.p2",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 3
+  },
+  {
+    "arlangModId": "arlangModId@11",
+    "containerFQN": "p1.p2.p3",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 4
+  },
+  {
+    "arlangModId": "arlangModId@12",
+    "containerFQN": "p1.p2.p3",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 5
+  },
+  {
+    "arlangModId": "arlangModId@13",
+    "containerFQN": "Example.Planner",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@14",
+    "containerFQN": "Example.Planner",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@15",
+    "containerFQN": "p1.PlannerCpOnePort",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@16",
+    "containerFQN": "p1.PlannerCpOnePort",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 3
+  },
+  {
+    "arlangModId": "arlangModId@17",
+    "containerFQN": "p1.p2.p3.Swc1",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 4
+  },
+  {
+    "arlangModId": "arlangModId@18",
+    "containerFQN": "p1.p2.p3.Swc1",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 5
+  },
+  {
+    "arlangModId": "arlangModId@19",
+    "containerFQN": "p1.p2.p3.Swc1",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 6
+  },
+  {
+    "arlangModId": "arlangModId@20",
+    "containerFQN": "p1.p2.p3.Swc1",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 7
+  },
+  {
+    "arlangModId": "arlangModId@21",
+    "containerFQN": "p1.p2.p3.ExampleSwc2",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 8
+  },
+  {
+    "arlangModId": "arlangModId@22",
+    "containerFQN": "Example.Planner",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@23",
+    "containerFQN": "Example.Planner",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@24",
+    "containerFQN": "p1.PlannerCp",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@25",
+    "containerFQN": "p1.p2.p3.Swc1",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 3
+  },
+  {
+    "arlangModId": "arlangModId@26",
+    "containerFQN": "p1.p2.p3.Swc1",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 4
+  },
+  {
+    "arlangModId": "arlangModId@27",
+    "containerFQN": "p1.p2.p3.Swc1",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 5
+  },
+  {
+    "arlangModId": "arlangModId@28",
+    "containerFQN": "p1.p2.p3.ExampleSwc2",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 6
+  }
+]

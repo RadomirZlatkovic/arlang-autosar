@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>firstPackage</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>a</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>b</SHORT-NAME>
+							<AR-PACKAGES>
+								<AR-PACKAGE>
+									<SHORT-NAME>c</SHORT-NAME>
+									<ELEMENTS>
+										<APPLICATION-SW-COMPONENT-TYPE>
+											<SHORT-NAME>appSwc</SHORT-NAME>
+										</APPLICATION-SW-COMPONENT-TYPE>
+										<APPLICATION-SW-COMPONENT-TYPE>
+											<SHORT-NAME>sswcCopied</SHORT-NAME>
+											<EXAMPLE-TAG>
+											</EXAMPLE-TAG>
+										</APPLICATION-SW-COMPONENT-TYPE>
+									</ELEMENTS>
+								</AR-PACKAGE>
+							</AR-PACKAGES>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

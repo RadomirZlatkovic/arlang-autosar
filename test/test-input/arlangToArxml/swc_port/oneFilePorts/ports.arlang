@@ -1,0 +1,81 @@
+#package p1.p2.p3
+
+    interface:senderReceiver Sr {
+        arlangModId : "arlangModId@1"
+    }
+
+    swComponent:application Swc1 {
+        port:required p1 implements MyInterface1 {
+            arlangModId : "arlangModId@10"
+        }
+
+        port:required NewP2 implements p1.p2.p3.Sr {
+        }
+
+        port:required PortPlannerCp implements sp {
+            arlangModId : "arlangModId@7"
+        }
+
+        port:provided p3 implements sp {
+            arlangModId : "arlangModId@8"
+        }
+
+        port:provided p3Cp1 implements sp {
+            arlangModId : "arlangModId@8"
+        }
+
+        port:provided p4 implements SensorFusion {
+            arlangModId : "arlangModId@9"
+        }
+
+        port:required p5 implements p1.ActuatorControl {
+            arlangModId : "arlangModId@11"
+        }
+
+        port:provided p3Cp2 implements Example.MyInterface1 {
+            arlangModId : "arlangModId@8"
+        }
+
+        arlangModId : "arlangModId@6"
+    }
+
+    interface:clientServer sp {
+        arlangModId : "arlangModId@4"
+    }
+
+#end
+
+#package Example
+    interface:clientServer MyInterface1 {
+        arlangModId : "arlangModId@2"
+    }
+
+    swComponent:application Planner{
+
+        port:provided checker implements SensorFusion {
+        }
+
+        port:required controller implements p1.p2.p3.sp {
+        }
+
+        port:required Modified implements sp {
+            arlangModId : "arlangModId@7"
+        }
+
+        arlangModId : "arlangModId@5"
+    }
+
+#end
+
+#package p1
+
+    interface:senderReceiver SensorFusion {
+        arlangModId : "arlangModId@0"
+    }
+
+    interface:clientServer ActuatorControl
+    {
+        arlangModId : "arlangModId@3"
+    }
+
+#end

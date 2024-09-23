@@ -1,0 +1,32 @@
+[
+  {
+    "arlangModId": "arlangModId@10",
+    "containerFQN": "s1.s2.s3",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@11",
+    "containerFQN": "s1.s2.s3.SWC",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@12",
+    "containerFQN": "s1.s2.s3.SWC",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@13",
+    "containerFQN": "s1.s2.s3.SWC",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@14",
+    "containerFQN": "s1.s2.s3.SWC",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 1
+  }
+]

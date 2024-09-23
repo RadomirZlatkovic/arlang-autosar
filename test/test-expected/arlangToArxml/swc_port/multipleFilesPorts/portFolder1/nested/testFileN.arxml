@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>org</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>com</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>c</SHORT-NAME>
+							<AR-PACKAGES>
+								<AR-PACKAGE>
+									<SHORT-NAME>l5</SHORT-NAME>
+									<ELEMENTS>
+										<SENDER-RECEIVER-INTERFACE>
+											<SHORT-NAME>SR</SHORT-NAME>
+										</SENDER-RECEIVER-INTERFACE>
+										<APPLICATION-SW-COMPONENT-TYPE>
+											<SHORT-NAME>UserDataProvider</SHORT-NAME>
+											<PORTS>
+												<R-PORT-PROTOTYPE>
+													<SHORT-NAME>fp</SHORT-NAME>
+													<REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/fp/FrameFeeder</REQUIRED-INTERFACE-TREF>
+												</R-PORT-PROTOTYPE>
+												<R-PORT-PROTOTYPE>
+													<SHORT-NAME>CSIReader</SHORT-NAME>
+													<REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/org/com/c/l5/CSI</REQUIRED-INTERFACE-TREF>
+												</R-PORT-PROTOTYPE>
+												<P-PORT-PROTOTYPE>
+													<SHORT-NAME>SRProvider</SHORT-NAME>
+													<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/org/com/c/l5/SR</PROVIDED-INTERFACE-TREF>
+												</P-PORT-PROTOTYPE>
+												<R-PORT-PROTOTYPE>
+													<SHORT-NAME>pri1</SHORT-NAME>
+													<REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/e/s1/i1</REQUIRED-INTERFACE-TREF>
+												</R-PORT-PROTOTYPE>
+												<P-PORT-PROTOTYPE>
+													<SHORT-NAME>ppi2</SHORT-NAME>
+													<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/e/s1/i2</PROVIDED-INTERFACE-TREF>
+												</P-PORT-PROTOTYPE>
+												<R-PORT-PROTOTYPE>
+													<SHORT-NAME>Lidar</SHORT-NAME>
+													<REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/COLLECTION/Lidar</REQUIRED-INTERFACE-TREF>
+												</R-PORT-PROTOTYPE>
+											</PORTS>
+										</APPLICATION-SW-COMPONENT-TYPE>
+										<CLIENT-SERVER-INTERFACE>
+											<SHORT-NAME>CSI</SHORT-NAME>
+										</CLIENT-SERVER-INTERFACE>
+									</ELEMENTS>
+								</AR-PACKAGE>
+							</AR-PACKAGES>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+		<AR-PACKAGE>
+			<SHORT-NAME>COLLECTION</SHORT-NAME>
+			<ELEMENTS>
+				<CLIENT-SERVER-INTERFACE>
+					<SHORT-NAME>Lidar</SHORT-NAME>
+				</CLIENT-SERVER-INTERFACE>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

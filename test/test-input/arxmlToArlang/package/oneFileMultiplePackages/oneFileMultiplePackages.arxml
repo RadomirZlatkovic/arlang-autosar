@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>P1</SHORT-NAME>
+		</AR-PACKAGE>
+		<AR-PACKAGE>
+			<SHORT-NAME>org</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>com</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>sector</SHORT-NAME>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+				<AR-PACKAGE>
+					<SHORT-NAME>example</SHORT-NAME>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+		<AR-PACKAGE>
+			<SHORT-NAME>p1</SHORT-NAME>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

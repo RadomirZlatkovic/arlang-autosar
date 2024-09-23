@@ -1,0 +1,30 @@
+#package s1
+#end
+
+#package s1.s2
+#end
+
+#package s1.s2.s3
+
+	swComponent:application SWC {
+
+		port:provided P1 implements Interfaces.I2 {
+			arlangModId : "arlangModId@11"
+		}
+
+		port:required P2 implements Interfaces.I1 {
+			arlangModId : "arlangModId@13"
+		}
+
+		port:required P3 implements Interfaces.I2 {
+			arlangModId : "arlangModId@14"
+		}
+
+		port:provided P4 implements Interfaces.I1 {
+			arlangModId : "arlangModId@12"
+		}
+
+		arlangModId : "arlangModId@10"
+	}
+
+#end

@@ -12,6 +12,7 @@ export default defineConfig({
         //     include: ['src'],
         //     exclude: ['**/generated'],
         // },
+        restoreMocks : true,
         deps: {
             interopDefault: true
         },

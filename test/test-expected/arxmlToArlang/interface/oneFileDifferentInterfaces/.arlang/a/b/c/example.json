@@ -1,0 +1,50 @@
+[
+  {
+    "arlangModId": "arlangModId@0",
+    "containerFQN": "i1",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@1",
+    "containerFQN": "i1.i2",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@2",
+    "containerFQN": "LastPackage",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@3",
+    "containerFQN": "LastPackage",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 3
+  },
+  {
+    "arlangModId": "arlangModId@4",
+    "containerFQN": "i1",
+    "tagName": "CLIENT-SERVER-INTERFACE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@5",
+    "containerFQN": "i1.i2.i3",
+    "tagName": "CLIENT-SERVER-INTERFACE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@6",
+    "containerFQN": "LastPackage",
+    "tagName": "CLIENT-SERVER-INTERFACE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@7",
+    "containerFQN": "LastPackage",
+    "tagName": "CLIENT-SERVER-INTERFACE",
+    "index": 3
+  }
+]

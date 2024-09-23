@@ -1,0 +1,50 @@
+[
+  {
+    "arlangModId": "arlangModId@0",
+    "containerFQN": "p",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@1",
+    "containerFQN": "p",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@2",
+    "containerFQN": "p.pn",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 2
+  },
+  {
+    "arlangModId": "arlangModId@3",
+    "containerFQN": "p.pn",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 3
+  },
+  {
+    "arlangModId": "arlangModId@4",
+    "containerFQN": "p.SWC1",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@5",
+    "containerFQN": "p.pn.SWC3",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 1
+  },
+  {
+    "arlangModId": "arlangModId@6",
+    "containerFQN": "p.SWC2",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@7",
+    "containerFQN": "p.pn.SWC4",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 1
+  }
+]

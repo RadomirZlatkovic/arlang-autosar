@@ -1,0 +1,67 @@
+#package ComponentsPackage
+    swComponent:application c1 {
+        arlangModId : "arlangModId@0"
+    }
+#end
+
+#package ComponentsPackageCopy
+    swComponent:application c1cp1 {
+        arlangModId : "arlangModId@0"
+    }
+    swComponent:application c1cp2 {
+        arlangModId : "arlangModId@0"
+    }
+    swComponent:application c1cp3 {
+        arlangModId : "arlangModId@0"
+    }
+#end
+
+#package ComponentsPackage.A
+    swComponent:application Component2{
+        arlangModId : "arlangModId@1"
+    }
+    swComponent:application Component3{
+        arlangModId : "arlangModId@2"
+    }
+#end
+
+#package ComponentsPackage.A.b
+
+    swComponent:application ab
+    {
+        arlangModId : "arlangModId@3"
+    }
+
+    swComponent:application NewCp1 {
+    }
+
+    swComponent:application NewCp2 {
+    }
+
+    swComponent:application NewCp3 {
+    }
+
+    swComponent:application Component2Cp{
+        arlangModId : "arlangModId@1"
+    }
+
+    swComponent:application NewCp4 {
+    }
+
+    swComponent:application NewCp5 {
+    }
+
+    swComponent:application Component3Cp{
+        arlangModId : "arlangModId@2"
+    }
+
+    swComponent:application NewCp6 {
+    }
+
+#end
+
+#package ComponentsPackage.C
+    swComponent:application swc {
+        arlangModId : "arlangModId@4"
+    }
+#end

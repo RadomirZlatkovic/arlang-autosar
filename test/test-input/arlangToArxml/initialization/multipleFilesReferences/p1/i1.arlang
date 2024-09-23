@@ -1,0 +1,6 @@
+#package P1
+
+interface:senderReceiver isr1 {
+}
+
+#end

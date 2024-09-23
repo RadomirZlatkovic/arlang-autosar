@@ -1,0 +1,4 @@
+#package clientServerInterfacesPackage.p1.a.b
+interface:clientServer CSI3
+{}
+#end

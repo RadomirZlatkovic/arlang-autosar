@@ -1,0 +1,27 @@
+#package collection
+interface:clientServer new1 {
+}
+interface:clientServer new2 {
+}
+interface:clientServer new3 {
+}
+interface:clientServer cs1 {
+    arlangModId : "arlangModId@0"
+}
+interface:clientServer new4 {
+}
+interface:clientServer new5 {
+}
+interface:clientServer cs222{
+    arlangModId : "arlangModId@1"
+}
+#end
+
+#package p1.p2.p3
+    interface:clientServer cs2Copied {
+        arlangModId : "arlangModId@1"
+    }
+    interface:clientServer cs1Copied {
+        arlangModId : "arlangModId@0"
+    }
+#end

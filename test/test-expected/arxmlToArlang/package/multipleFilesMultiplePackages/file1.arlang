@@ -1,0 +1,8 @@
+#package p1
+#end
+
+#package p1.p2
+#end
+
+#package p1.p2.p3
+#end

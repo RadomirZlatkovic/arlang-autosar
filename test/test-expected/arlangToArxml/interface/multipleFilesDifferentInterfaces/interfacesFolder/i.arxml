@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>e</SHORT-NAME>
+			<ELEMENTS>
+				<CLIENT-SERVER-INTERFACE>
+					<SHORT-NAME>ReliableConnection</SHORT-NAME>
+					<A>
+						<B attr1="attr1Val">
+							<C>val</C>
+						</B>
+					</A>
+				</CLIENT-SERVER-INTERFACE>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>UnreliableConnection</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>modifiedTagDiagConnection</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+				<CLIENT-SERVER-INTERFACE>
+					<SHORT-NAME>ReliableConnectionCp1</SHORT-NAME>
+					<A>
+						<B attr1="attr1Val">
+							<C>val</C>
+						</B>
+					</A>
+				</CLIENT-SERVER-INTERFACE>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>UnreliableConnectionCp</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+				<CLIENT-SERVER-INTERFACE>
+					<SHORT-NAME>ReliableConnectionCp2</SHORT-NAME>
+					<A>
+						<B attr1="attr1Val">
+							<C>val</C>
+						</B>
+					</A>
+				</CLIENT-SERVER-INTERFACE>
+			</ELEMENTS>
+		</AR-PACKAGE>
+		<AR-PACKAGE>
+			<SHORT-NAME>m</SHORT-NAME>
+			<ELEMENTS>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>n1</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>n2</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>n3</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>n4</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>n5</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,16 @@
+#package e1
+#end
+
+#package e1.e2
+#end
+
+#package j1
+#end
+
+#package j1.j2
+
+	swComponent:application j3 {
+		arlangModId : "arlangModId@4"
+	}
+
+#end

@@ -1,0 +1,11 @@
+#package com1.com2
+
+interface:clientServer csi1_Modified{
+    arlangModId : "arlangModId@3"
+}
+interface:senderReceiver newSRInterface {}
+interface:clientServer csi2{
+    arlangModId : "arlangModId@4"
+}
+
+#end

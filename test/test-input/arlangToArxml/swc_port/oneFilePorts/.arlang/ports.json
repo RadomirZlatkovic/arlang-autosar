@@ -1,0 +1,74 @@
+[
+	{
+		"arlangModId": "arlangModId@0",
+		"containerFQN": "p1",
+		"tagName": "SENDER-RECEIVER-INTERFACE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@1",
+		"containerFQN": "p1.p2.p3",
+		"tagName": "SENDER-RECEIVER-INTERFACE",
+		"index": 1
+	},
+	{
+		"arlangModId": "arlangModId@2",
+		"containerFQN": "Example",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@3",
+		"containerFQN": "p1",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 1
+	},
+	{
+		"arlangModId": "arlangModId@4",
+		"containerFQN": "p1.p2.p3",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 2
+	},
+	{
+		"arlangModId": "arlangModId@5",
+		"containerFQN": "Example",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@6",
+		"containerFQN": "p1.p2.p3",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 1
+	},
+	{
+		"arlangModId": "arlangModId@7",
+		"containerFQN": "Example.Planner",
+		"tagName": "P-PORT-PROTOTYPE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@8",
+		"containerFQN": "p1.p2.p3.Swc1",
+		"tagName": "P-PORT-PROTOTYPE",
+		"index": 1
+	},
+	{
+		"arlangModId": "arlangModId@9",
+		"containerFQN": "p1.p2.p3.Swc1",
+		"tagName": "P-PORT-PROTOTYPE",
+		"index": 2
+	},
+	{
+		"arlangModId": "arlangModId@10",
+		"containerFQN": "p1.p2.p3.Swc1",
+		"tagName": "R-PORT-PROTOTYPE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@11",
+		"containerFQN": "p1.p2.p3.Swc1",
+		"tagName": "R-PORT-PROTOTYPE",
+		"index": 1
+	}
+]

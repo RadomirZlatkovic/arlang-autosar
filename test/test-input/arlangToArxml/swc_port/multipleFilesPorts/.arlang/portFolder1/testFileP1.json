@@ -1,0 +1,56 @@
+[
+	{
+		"arlangModId": "arlangModId@0",
+		"containerFQN": "e.s1",
+		"tagName": "SENDER-RECEIVER-INTERFACE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@1",
+		"containerFQN": "e.s1",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@2",
+		"containerFQN": "e.s1",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 0
+	},
+    {
+		"arlangModId": "arlangModId@3",
+		"containerFQN": "m1",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 1
+	},
+	{
+		"arlangModId": "arlangModId@4",
+		"containerFQN": "e.s1.MyS",
+		"tagName": "P-PORT-PROTOTYPE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@5",
+		"containerFQN": "e.s1.MyS",
+		"tagName": "P-PORT-PROTOTYPE",
+		"index": 1
+	},
+	{
+		"arlangModId": "arlangModId@6",
+		"containerFQN": "e.s1.MyS",
+		"tagName": "P-PORT-PROTOTYPE",
+		"index": 2
+	},
+	{
+		"arlangModId": "arlangModId@7",
+		"containerFQN": "e.s1.MyS",
+		"tagName": "R-PORT-PROTOTYPE",
+		"index": 0
+	},
+	{
+		"arlangModId": "arlangModId@8",
+		"containerFQN": "e.s1.MyS",
+		"tagName": "R-PORT-PROTOTYPE",
+		"index": 1
+	}
+]

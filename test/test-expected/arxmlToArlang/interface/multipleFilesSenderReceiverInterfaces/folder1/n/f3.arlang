@@ -1,0 +1,7 @@
+#package n
+
+	interface:senderReceiver n {
+		arlangModId : "arlangModId@6"
+	}
+
+#end

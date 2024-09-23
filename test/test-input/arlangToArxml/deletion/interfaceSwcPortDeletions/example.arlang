@@ -1,0 +1,115 @@
+#package Example
+
+	interface:clientServer MyInterface1 {
+		arlangModId : "arlangModId@3"
+	}
+
+	swComponent:application Planner {
+
+		port:provided new implements Example.MyInterface1 {
+			arlangModId : "arlangModId@14"
+		}
+
+		port:required newR implements Example.MyInterface1 {
+			arlangModId : "arlangModId@22"
+		}
+
+		arlangModId : "arlangModId@7"
+	}
+
+#end
+
+#package p1
+
+	swComponent:application Planner_COPIED_AtLastTransformation {
+
+		port:required Modified_Cp_Changed implements p1.SensorFusion {
+			arlangModId : "arlangModId@23"
+		}
+
+		arlangModId : "arlangModId@7"
+	}
+
+	interface:senderReceiver SensorFusion {
+		arlangModId : "arlangModId@0"
+	}
+
+	swComponent:application PlannerCp {
+
+		port:required Modified implements p1.p2.p3.sp {
+			arlangModId : "arlangModId@24"
+		}
+
+		arlangModId : "arlangModId@8"
+	}
+
+	interface:clientServer ActuatorControl {
+		arlangModId : "arlangModId@5"
+	}
+
+	swComponent:application PlannerCpOnePort {
+
+		port:provided checker implements p1.SensorFusion {
+			arlangModId : "arlangModId@15"
+		}
+
+		port:provided newButNotCopied implements Example.MyInterface1 {
+			arlangModId : "arlangModId@16"
+		}
+
+		arlangModId : "arlangModId@9"
+	}
+
+#end
+
+#package p1.p2
+
+
+
+#end
+
+#package p1.p2.p3
+
+	interface:senderReceiver Sr {
+		arlangModId : "arlangModId@2"
+	}
+
+	swComponent:application Swc1 {
+
+		port:required p1 implements Example.MyInterface1 {
+			arlangModId : "arlangModId@25"
+		}
+
+		port:required NewP2 implements p1.p2.p3.Sr {
+			arlangModId : "arlangModId@26"
+		}
+
+		port:provided p3 implements p1.p2.p3.sp {
+			arlangModId : "arlangModId@17"
+		}
+
+		port:provided p3Cp1 implements p1.p2.p3.sp {
+			arlangModId : "arlangModId@18"
+		}
+
+		port:provided p4 implements p1.SensorFusion {
+			arlangModId : "arlangModId@19"
+		}
+
+		port:required p5 implements p1.ActuatorControl {
+			arlangModId : "arlangModId@27"
+		}
+
+		port:provided p3Cp2 implements Example.MyInterface1 {
+			arlangModId : "arlangModId@20"
+		}
+
+		arlangModId : "arlangModId@11"
+	}
+
+
+	interface:clientServer sp {
+		arlangModId : "arlangModId@6"
+	}
+
+#end

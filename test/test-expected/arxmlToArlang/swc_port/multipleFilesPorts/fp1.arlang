@@ -1,0 +1,43 @@
+#package p
+
+	swComponent:application SWC1 {
+
+		port:provided MyPort implements Interfaces.I1 {
+			arlangModId : "arlangModId@4"
+		}
+
+		arlangModId : "arlangModId@0"
+	}
+
+	swComponent:application SWC2 {
+
+		port:required MyPort implements Interfaces.I1 {
+			arlangModId : "arlangModId@6"
+		}
+
+		arlangModId : "arlangModId@1"
+	}
+
+#end
+
+#package p.pn
+
+	swComponent:application SWC3 {
+
+		port:provided ExamplePort implements Interfaces.I2 {
+			arlangModId : "arlangModId@5"
+		}
+
+		arlangModId : "arlangModId@2"
+	}
+
+	swComponent:application SWC4 {
+
+		port:required ExamplePort implements Interfaces.I2 {
+			arlangModId : "arlangModId@7"
+		}
+
+		arlangModId : "arlangModId@3"
+	}
+
+#end

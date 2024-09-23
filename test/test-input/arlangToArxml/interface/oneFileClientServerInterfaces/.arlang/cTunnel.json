@@ -1,0 +1,8 @@
+[
+    {
+		"arlangModId": "arlangModId@0",
+		"containerFQN": "t.package.example",
+		"tagName": "CLIENT-SERVER-INTERFACE",
+		"index": 0
+    }
+]

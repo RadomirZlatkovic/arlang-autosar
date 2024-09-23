@@ -1,0 +1,5 @@
+#package s
+
+interface:clientServer ics {}
+
+#end

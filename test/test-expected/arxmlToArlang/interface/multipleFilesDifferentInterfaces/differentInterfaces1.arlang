@@ -1,0 +1,23 @@
+#package DifferentInterfaces1Package
+
+	interface:clientServer ExampleInterface1 {
+		arlangModId : "arlangModId@2"
+	}
+
+	interface:clientServer ExampleInterface2 {
+		arlangModId : "arlangModId@3"
+	}
+
+	interface:senderReceiver ExampleInterface3 {
+		arlangModId : "arlangModId@0"
+	}
+
+	interface:clientServer ExampleInterface4 {
+		arlangModId : "arlangModId@4"
+	}
+
+	interface:senderReceiver ExampleInterface5 {
+		arlangModId : "arlangModId@1"
+	}
+
+#end

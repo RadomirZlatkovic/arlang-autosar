@@ -1,0 +1,36 @@
+#package e1
+#end
+
+#package e1.e2
+#end
+
+#package e1.e2.e3
+#end
+
+#package exampleShortName
+
+	interface:senderReceiver SRI {
+		arlangModId : "arlangModId@0"
+	}
+
+#end
+
+#package p1
+
+	interface:senderReceiver SRI0 {
+		arlangModId : "arlangModId@1"
+	}
+
+#end
+
+#package p1.P2
+
+	interface:senderReceiver SRI1 {
+		arlangModId : "arlangModId@2"
+	}
+
+	interface:senderReceiver SRI2 {
+		arlangModId : "arlangModId@3"
+	}
+
+#end

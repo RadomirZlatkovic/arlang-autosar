@@ -1,0 +1,22 @@
+#package fp
+
+    swComponent:application UserCameraDataProvider {
+
+        port:provided FrameProvider implements FrameFeeder {
+            arlangModId : "arlangModId@11"
+        }
+
+        port:required newPort implements e.s1.i1 {}
+
+        port:required exampleChangedName implements e.s1.i2 {
+            arlangModId : "arlangModId@12"
+        }
+
+        arlangModId : "arlangModId@10"
+    }
+
+    interface:senderReceiver FrameFeeder {
+        arlangModId : "arlangModId@9"
+    }
+
+#end

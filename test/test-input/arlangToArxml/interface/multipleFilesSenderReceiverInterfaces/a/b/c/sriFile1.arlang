@@ -1,0 +1,27 @@
+#package a.b.c
+
+interface:senderReceiver NEW{
+}
+
+interface:senderReceiver SR_1_Cp1{
+    arlangModId : "arlangModId@0"
+}
+
+interface:senderReceiver SR_1{
+    arlangModId : "arlangModId@0"
+}
+
+interface:senderReceiver SR_1_Cp2{
+    arlangModId : "arlangModId@0"
+}
+
+interface:senderReceiver SR_I_1{
+    arlangModId : "arlangModId@1"
+}
+
+
+interface:senderReceiver SR_1_Cp3{
+    arlangModId : "arlangModId@0"
+}
+
+#end

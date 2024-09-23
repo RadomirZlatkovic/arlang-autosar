@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>fp</SHORT-NAME>
+			<ELEMENTS>
+				<APPLICATION-SW-COMPONENT-TYPE>
+					<SHORT-NAME>UserCameraDataProvider</SHORT-NAME>
+					<PORTS>
+						<P-PORT-PROTOTYPE>
+							<SHORT-NAME>FrameProvider</SHORT-NAME>
+							<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/fp/FrameFeeder</PROVIDED-INTERFACE-TREF>
+						</P-PORT-PROTOTYPE>
+						<R-PORT-PROTOTYPE>
+							<SHORT-NAME>example</SHORT-NAME>
+							<REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/e/s1/i2</REQUIRED-INTERFACE-TREF>
+							<QWE>
+								<RTY>
+									<UIO>val</UIO>
+								</RTY>
+							</QWE>
+						</R-PORT-PROTOTYPE>
+					</PORTS>
+				</APPLICATION-SW-COMPONENT-TYPE>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>FrameFeeder</SHORT-NAME>
+				</SENDER-RECEIVER-INTERFACE>
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

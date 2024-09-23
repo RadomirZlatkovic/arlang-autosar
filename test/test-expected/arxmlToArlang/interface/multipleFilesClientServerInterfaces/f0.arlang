@@ -1,0 +1,7 @@
+#package p1
+
+	interface:clientServer csi {
+		arlangModId : "arlangModId@0"
+	}
+
+#end

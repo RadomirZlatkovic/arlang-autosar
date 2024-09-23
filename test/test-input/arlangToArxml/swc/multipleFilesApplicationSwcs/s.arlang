@@ -1,0 +1,8 @@
+#package firstPackage.a.b.c
+swComponent:application appSwc {
+    arlangModId : "arlangModId@0"
+}
+swComponent:application sswcCopied {
+    arlangModId : "arlangModId@2"
+}
+#end

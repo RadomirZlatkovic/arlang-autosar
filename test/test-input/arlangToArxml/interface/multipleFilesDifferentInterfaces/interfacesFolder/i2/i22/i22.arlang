@@ -1,0 +1,7 @@
+#package k
+
+interface:clientServer ExampleInterface
+{
+}
+
+#end

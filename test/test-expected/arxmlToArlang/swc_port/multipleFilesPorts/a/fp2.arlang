@@ -1,0 +1,11 @@
+#package Interfaces
+
+	interface:clientServer I1 {
+		arlangModId : "arlangModId@9"
+	}
+
+	interface:senderReceiver I2 {
+		arlangModId : "arlangModId@8"
+	}
+
+#end

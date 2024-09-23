@@ -1,0 +1,40 @@
+#package c
+
+interface:senderReceiver AnotherICp {
+    arlangModId : "arlangModId@0"
+}
+interface:clientServer MyInterface {
+    arlangModId : "arlangModId@2"
+}
+interface:senderReceiver AnotherI {
+    arlangModId : "arlangModId@0"
+}
+
+#end
+
+#package c.d
+interface:senderReceiver IExample1Mod
+{
+    arlangModId : "arlangModId@1"
+}
+interface:clientServer IExample2{
+    arlangModId : "arlangModId@3"
+}
+#end
+
+#package c.d.e
+    interface:clientServer CopiedDiffTagAnotherI {
+        arlangModId : "arlangModId@0"
+    }
+#end
+
+#package c
+    interface:clientServer CopiedIExample2{
+        arlangModId : "arlangModId@3"
+    }
+#end
+
+#package newPackage
+    interface:senderReceiver newElement {
+    }
+#end

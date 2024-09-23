@@ -1,0 +1,14 @@
+[
+  {
+    "arlangModId": "arlangModId@0",
+    "containerFQN": "p1",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@1",
+    "containerFQN": "p2",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 1
+  }
+]

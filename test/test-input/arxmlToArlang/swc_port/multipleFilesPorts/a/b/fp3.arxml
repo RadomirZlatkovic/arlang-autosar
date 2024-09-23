@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>s1</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>s2</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>s3</SHORT-NAME>
+							<ELEMENTS>
+								<APPLICATION-SW-COMPONENT-TYPE>
+									<SHORT-NAME>SWC</SHORT-NAME>
+									<PORTS>
+										<P-PORT-PROTOTYPE>
+											<SHORT-NAME>P1</SHORT-NAME>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/I2</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE>
+											<SHORT-NAME>P2</SHORT-NAME>
+											<REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Interfaces/I1</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+										<R-PORT-PROTOTYPE>
+											<SHORT-NAME>P3</SHORT-NAME>
+											<REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/I2</REQUIRED-INTERFACE-TREF>
+										</R-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE>
+											<SHORT-NAME>P4</SHORT-NAME>
+											<PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Interfaces/I1</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+									</PORTS>
+								</APPLICATION-SW-COMPONENT-TYPE>
+							</ELEMENTS>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,36 @@
+#package swcSN0
+
+	swComponent:application MySwc0 {
+		arlangModId : "arlangModId@0"
+	}
+
+#end
+
+#package swcSN0.swcSN1
+#end
+
+#package swcSN0.swcSN1.swcSN2
+
+	swComponent:application MySwc1 {
+		arlangModId : "arlangModId@1"
+	}
+
+	swComponent:application MySwc2 {
+		arlangModId : "arlangModId@2"
+	}
+
+#end
+
+#package NoElementsPackage
+#end
+
+#package NoSwcPackage
+#end
+
+#package j1
+
+	swComponent:application MySwc {
+		arlangModId : "arlangModId@3"
+	}
+
+#end

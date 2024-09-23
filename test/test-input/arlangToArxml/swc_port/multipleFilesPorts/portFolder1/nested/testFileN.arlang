@@ -1,0 +1,48 @@
+#package org.com.c.l5
+
+    interface:senderReceiver SR {
+        arlangModId : "arlangModId@13"
+    }
+
+    swComponent:application UserDataProvider {
+        port:required fp implements fp.FrameFeeder {
+            arlangModId : "arlangModId@19"
+        }
+
+        port:required CSIReader implements CSI {
+            arlangModId : "arlangModId@20"
+        }
+
+        port:provided SRProvider implements org.com.c.l5.SR{
+            arlangModId : "arlangModId@17"
+        }
+
+        port:required pri1 implements e.s1.i1 {
+            arlangModId : "arlangModId@21"
+        }
+
+        port:provided ppi2 implements e.s1.i2 {
+            arlangModId : "arlangModId@18"
+        }
+
+        port:required Lidar implements Lidar {
+            arlangModId : "arlangModId@22"
+        }
+
+        arlangModId : "arlangModId@16"
+    }
+
+    interface:clientServer CSI {
+        arlangModId : "arlangModId@14"
+    }
+
+#end
+
+
+#package COLLECTION
+
+    interface:clientServer Lidar {
+        arlangModId : "arlangModId@15"
+    }
+
+#end

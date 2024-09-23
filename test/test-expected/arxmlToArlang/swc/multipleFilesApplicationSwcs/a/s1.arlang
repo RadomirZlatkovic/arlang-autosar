@@ -1,0 +1,23 @@
+#package s1
+
+	swComponent:application ExampleSwcShortName0 {
+		arlangModId : "arlangModId@0"
+	}
+
+#end
+
+#package s1.s2
+
+	swComponent:application ExampleSwcShortName1 {
+		arlangModId : "arlangModId@1"
+	}
+
+	swComponent:application ExampleSwcShortName2 {
+		arlangModId : "arlangModId@2"
+	}
+
+	swComponent:application ExampleSwcShortName3 {
+		arlangModId : "arlangModId@3"
+	}
+
+#end

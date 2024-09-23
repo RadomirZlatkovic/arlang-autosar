@@ -1,0 +1,32 @@
+[
+    {
+		"arlangModId": "arlangModId@0",
+		"containerFQN": "ComponentsPackage",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 0
+    },
+    {
+		"arlangModId": "arlangModId@1",
+		"containerFQN": "ComponentsPackage.A",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 1
+    },
+    {
+		"arlangModId": "arlangModId@2",
+		"containerFQN": "ComponentsPackage.A",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 2
+    },
+    {
+		"arlangModId": "arlangModId@3",
+		"containerFQN": "ComponentsPackage.A.b",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 3
+    },
+    {
+		"arlangModId": "arlangModId@4",
+		"containerFQN": "ComponentsPackage.C",
+		"tagName": "APPLICATION-SW-COMPONENT-TYPE",
+		"index": 4
+    }
+]

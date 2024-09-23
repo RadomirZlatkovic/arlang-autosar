@@ -1,0 +1,20 @@
+#package p1.p2
+    swComponent:application firstComponent {
+        arlangModId : "arlangModId@1"
+    }
+#end
+
+#package p1.p2.p3
+
+    swComponent:application NewAppSwc1 {
+    }
+
+    swComponent:application sswcModified
+    {
+        arlangModId : "arlangModId@2"
+    }
+
+    swComponent:application NewAppSwc2 {
+    }
+
+#end

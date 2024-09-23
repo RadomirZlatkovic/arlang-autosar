@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>ComponentsPackage</SHORT-NAME>
+			<ELEMENTS>
+				<APPLICATION-SW-COMPONENT-TYPE att1="attr1Val">
+					<SHORT-NAME>c1</SHORT-NAME>
+					<EXAMPLE-TAG1>
+						<EXAMPLE-TAG2 a="a" b="b">Value</EXAMPLE-TAG2>
+					</EXAMPLE-TAG1>
+				</APPLICATION-SW-COMPONENT-TYPE>
+			</ELEMENTS>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>A</SHORT-NAME>
+					<ELEMENTS>
+						<APPLICATION-SW-COMPONENT-TYPE>
+							<SHORT-NAME>Component2</SHORT-NAME>
+						</APPLICATION-SW-COMPONENT-TYPE>
+						<APPLICATION-SW-COMPONENT-TYPE>
+							<SHORT-NAME>Component3</SHORT-NAME>
+						</APPLICATION-SW-COMPONENT-TYPE>
+					</ELEMENTS>
+					<AR-PACKAGES>
+						<AR-PACKAGE>
+							<SHORT-NAME>b</SHORT-NAME>
+							<ELEMENTS>
+								<APPLICATION-SW-COMPONENT-TYPE>
+									<SHORT-NAME>ab</SHORT-NAME>
+								</APPLICATION-SW-COMPONENT-TYPE>
+							</ELEMENTS>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+				<AR-PACKAGE>
+					<SHORT-NAME>C</SHORT-NAME>
+					<ELEMENTS>
+						<APPLICATION-SW-COMPONENT-TYPE>
+							<SHORT-NAME>swc</SHORT-NAME>
+						</APPLICATION-SW-COMPONENT-TYPE>
+					</ELEMENTS>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

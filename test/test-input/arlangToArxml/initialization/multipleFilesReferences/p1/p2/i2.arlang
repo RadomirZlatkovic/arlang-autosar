@@ -1,0 +1,10 @@
+#package P1.p2
+
+interface:clientServer i2
+{
+}
+
+interface:senderReceiver i22
+{}
+
+#end
