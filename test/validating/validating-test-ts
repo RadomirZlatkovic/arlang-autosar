@@ -1,3 +1,6 @@
+/**
+ * This is example test file from yo langium-generator - this API should be used for ARLANG instead of the old one
+*/
 import { beforeAll, describe, expect, test } from "vitest";
 import { EmptyFileSystem, type LangiumDocument } from "langium";
 import { expandToString as s } from "langium/generate";
