@@ -7,6 +7,8 @@
         "type": "git",
         "url": "https://github.com/RadomirZlatkovic/arlang-autosar"
     },
+    "markdown": "github",
+    "icon": "resources/ArlangGroupLogo.png",
     "type": "module",
     "scripts": {
         "build": "tsc -b tsconfig.src.json && node esbuild.mjs",

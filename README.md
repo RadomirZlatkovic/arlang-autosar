@@ -1,6 +1,6 @@
 # Quick demo
 
-https://github.com/user-attachments/assets/37538af4-45fa-4971-90db-7e08a2b04d40
+<video src="https://github.com/user-attachments/assets/37538af4-45fa-4971-90db-7e08a2b04d40"></video>
 
 # Developer guide
 
