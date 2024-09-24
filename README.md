@@ -8,13 +8,13 @@ https://github.com/user-attachments/assets/37538af4-45fa-4971-90db-7e08a2b04d40
   - Install Node.js
   - Position terminal inside this directory
   - Execute following commands:
-    - npm install // this will install dependencies into node_modules
-    - npm run langium:generate // this will generate files from arlang.langium file
+    - npm install *(this will install dependencies into node_modules)*
+    - npm run langium:generate *(this will generate files from arlang.langium file)*
     - npm run build
-    - npm run bundle // (optional) this will reduce the size of the extension and make it faster
+    - npm run bundle *(optional - this will reduce the size of the extension and make it faster)*
 
 ## Try
-  - Press F5 // it will open new VSCode instance with included extension
+  - Press F5 *(it will open new VSCode instance with included extension*)
   - You can create file with .arlang extension and start writing code
 
 ## Optional
