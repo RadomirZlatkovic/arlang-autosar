@@ -1,7 +1,12 @@
 {
     "name": "arlang-autosar",
-    "description": "Please enter a brief description here",
+    "description": "Language for AUTOSAR modeling",
+    "publisher": "arlang-group",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RadomirZlatkovic/arlang-autosar"
+    },
     "type": "module",
     "scripts": {
         "build": "tsc -b tsconfig.src.json && node esbuild.mjs",
