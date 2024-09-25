@@ -1,0 +1,30 @@
+#package p1
+#end
+
+#package p1.p2
+#end
+
+#package p1.p2.p3
+
+	interface:clientServer NewInterface {
+		arlangModId : "arlangModId@1"
+	}
+
+	interface:senderReceiver MyInterface2 {
+		arlangModId : "arlangModId@0"
+	}
+
+	swComponent:application MySwc {
+
+		port:provided p1 implements p1.p2.p3.MyInterface2 {
+			arlangModId : "arlangModId@3"
+		}
+
+		port:required p2 implements p1.p2.p3.MyInterface2 {
+			arlangModId : "arlangModId@4"
+		}
+
+		arlangModId : "arlangModId@2"
+	}
+
+#end

@@ -1,0 +1,16 @@
+#package com.myCompany
+
+    interface:senderReceiver DriverMonitoring {}
+    interface:clientServer CameraControl {
+    }
+    interface:clientServer SurrondView
+    {
+    }
+
+#end
+
+#package com.myCompany.sector
+    interface:clientServer IEngineControl {}
+    interface:senderReceiver ILaneDetection {}
+    interface:senderReceiver ITirePressure {}
+#end

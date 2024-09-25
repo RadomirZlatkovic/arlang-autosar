@@ -1,0 +1,33 @@
+#package d
+
+    swComponent:application Swc2 {
+        port:provided provider implements IActuator {}
+        port:provided providerWithSameInterface implements d.IActuator {
+        }
+        port:required READER implements ISensor {
+        }
+    }
+
+    interface:clientServer IActuator {
+    }
+
+#end
+
+#package d.e
+    interface:senderReceiver ISensor {
+    }
+#end
+
+#package f
+    swComponent:application Swc2 {
+        port:required examplePotName1 implements IActuator {
+
+        }
+        port:required sensorReader implements ISensor
+        {
+        }
+
+        port:required sensorReaderOfSameInterface implements d.e.ISensor {
+        }
+    }
+#end

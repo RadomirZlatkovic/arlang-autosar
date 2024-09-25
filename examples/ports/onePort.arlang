@@ -1,0 +1,16 @@
+#package a
+
+    interface:clientServer ExampleInterface1 {
+    }
+
+    swComponent:application Swc1 {
+        port:provided MyPort implements ExampleInterface1 {
+        }
+    }
+
+    swComponent:application Swc2 {
+        port:required MyPort implements ExampleInterface1 {
+        }
+    }
+
+#end

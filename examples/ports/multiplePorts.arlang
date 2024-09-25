@@ -1,0 +1,20 @@
+#package b
+
+    interface:senderReceiver ExampleInterface2 {
+    }
+
+    swComponent:application Swc1 {
+        port:provided MyPort0 implements ExampleInterface2 {
+        }
+
+        port:required MyPort1 implements ExampleInterface2 {
+        }
+
+        port:provided MyPort2 implements ExampleInterface2 {
+        }
+
+        port:required MyPort3 implements ExampleInterface2 {
+        }
+    }
+
+#end

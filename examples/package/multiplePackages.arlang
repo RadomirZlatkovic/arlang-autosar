@@ -1,0 +1,15 @@
+#package A
+#end
+
+#package A.S1.Last
+#end
+
+#package One.Two.Three
+
+#end
+
+#package nested.nested1
+#end
+
+#package nested.nested1.nested2
+#end

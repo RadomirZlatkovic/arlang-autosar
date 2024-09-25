@@ -1,0 +1,22 @@
+#package c
+
+    interface:clientServer ExampleInterface3 {
+    }
+    interface:senderReceiver ExampleInterface4 {
+    }
+
+    swComponent:application Swc1 {
+        port:provided Pp0 implements ExampleInterface3 {
+        }
+        port:required Pp1 implements ExampleInterface4 {
+        }
+    }
+
+    swComponent:application Swc2 {
+        port:required port5 implements ExampleInterface4 {
+        }
+        port:provided port6 implements ExampleInterface3 {
+        }
+    }
+
+#end

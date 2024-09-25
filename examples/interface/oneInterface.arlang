@@ -1,0 +1,7 @@
+#package a1.b2.c3
+    interface:clientServer MyInterface {}
+#end
+
+#package p1.p2.p3
+    interface:senderReceiver RandomInterface {}
+#end

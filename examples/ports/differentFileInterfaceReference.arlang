@@ -1,0 +1,13 @@
+#package swc.package
+
+    swComponent:application NamedComponent {
+        port:provided MessageSender implements d.IActuator { }
+        port:required mgsReceiver implements d.e.ISensor {
+        }
+        port:provided PpEngine implements a.ExampleInterface1 {
+        }
+        port:required PrEnginer implements b.ExampleInterface2{
+        }
+    }
+
+#end

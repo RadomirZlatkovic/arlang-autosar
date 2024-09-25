@@ -1,0 +1,12 @@
+#package p1.p2
+
+    swComponent:application HeadUpDisplay {}
+    swComponent:application SeatBeltAlert {
+    }
+
+#end
+
+#package p1.p2.p3
+    swComponent:application ABS {}
+    swComponent:application LowFuelWarning {}
+#end

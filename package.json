@@ -2,7 +2,7 @@
     "name": "arlang-autosar",
     "description": "Language for AUTOSAR modeling",
     "publisher": "arlang-group",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/RadomirZlatkovic/arlang-autosar"

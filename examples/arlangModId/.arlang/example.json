@@ -1,0 +1,32 @@
+[
+  {
+    "arlangModId": "arlangModId@0",
+    "containerFQN": "p1.p2.p3",
+    "tagName": "SENDER-RECEIVER-INTERFACE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@1",
+    "containerFQN": "p1.p2.p3",
+    "tagName": "CLIENT-SERVER-INTERFACE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@2",
+    "containerFQN": "p1.p2.p3",
+    "tagName": "APPLICATION-SW-COMPONENT-TYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@3",
+    "containerFQN": "p1.p2.p3.MySwc",
+    "tagName": "P-PORT-PROTOTYPE",
+    "index": 0
+  },
+  {
+    "arlangModId": "arlangModId@4",
+    "containerFQN": "p1.p2.p3.MySwc",
+    "tagName": "R-PORT-PROTOTYPE",
+    "index": 0
+  }
+]
