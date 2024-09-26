@@ -8,7 +8,7 @@ When you install extension, new View Container is shown, and opening it reveals 
 ![ViewContainer](https://github.com/user-attachments/assets/01a83df9-622f-4606-9f5e-cf1b4defdcff)
 
 
-To begin working you must ***add folder to workspace*** which contains ARXML files and ***add folder to workspace*** which will store Arlang files.
+To begin working you must ***add folder to workspace*** which is used to store ARXML files and ***add folder to workspace*** which will store Arlang files.
 
 ![WorkspaceAddedFolders](https://github.com/user-attachments/assets/39c6968d-2247-4192-b9b0-c6cb44cf8a4e)
 
