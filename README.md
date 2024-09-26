@@ -53,3 +53,7 @@ or right-click ***Target Project folder*** and choose ***Transform ARXML files t
 ![image](https://github.com/user-attachments/assets/35a33c76-d6ba-449a-a25a-ac8a894ee3b4)
 
 After that, you can edit Arlang files and transform Arlang to ARXML to reflect changes.
+
+#
+
+To find more information, go to [Wiki](https://github.com/RadomirZlatkovic/arlang-autosar/wiki) page.
